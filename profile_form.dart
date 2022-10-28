@@ -7,15 +7,11 @@ import 'dart:async';
 import 'package:image_picker/image_picker.dart';
 
 class profile extends StatefulWidget {
-  String emailid;
   @override
-  profile({required this.emailid});
   State<profile> createState() => _profileState(emailid: '' );
 }
 
 class _profileState extends State<profile> {
-  String emailid;
-  _profileState({required this.emailid}) {}
   File? image;
 
   Future pickImage(ImageSource source) async {
